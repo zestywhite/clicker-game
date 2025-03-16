@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Game Image -->
+    <img src="Images/gamebanner.png" id="gameImage" alt="Clicker Game Image">
+
+    <!-- Clicker Game Title -->
+    <h1>Personal Clicker</h1>
+
+    <!-- Click Button -->
+    <button id="clickButton">Click Me!</button>
+    <p>Clicks: <span id="clickCount">0</span></p>
+
+    <!-- Rebirth System -->
+    <button id="rebirthButton" disabled>Rebirth (1000 Clicks)</button>
+    <p>Rebirths: <span id="rebirthCount">0</span></p>
+
+    <!-- Navigation Buttons -->
+    <a href="shop.html">Go to Shop</a>
+
+    <!-- Hamburger Menu for Settings -->
+    <button id="menuButton">☰</button>
+
+    <!-- Settings Menu -->
+    <div id="settingsMenu">
+        <button id="toggleMusic">Play/Pause Music</button>
+        <label for="volumeSlider">Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/background.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
